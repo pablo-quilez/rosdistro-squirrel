@@ -7,10 +7,43 @@ release_platforms:
   - trusty
 repositories:
   squirrel_common:
-    source:
-      type: git
-      url: git@github.com:squirrel-project/squirrel_common.git
-      version: indigo_dev
-    status: maintained
+      doc:
+        type: git
+        url: git@github.com:squirrel-project/squirrel_common.git
+        version: doc
+      release:
+        packages:
+        - robotino_description
+        - robotino_msgs
+        - softhand_description
+        - squirrel_2d_localizer_msgs
+        - squirrel_3d_localizer_msgs
+        - squirrel_3d_mapping_msgs
+        - squirrel_common
+        - squirrel_dynamic_filter_msgs
+        - squirrel_footprint_observer_msgs
+        - squirrel_hri_msgs
+        - squirrel_kclhand_msgs
+        - squirrel_manipulation_msgs
+        - squirrel_mhand_msgs
+        - squirrel_navigation_msgs
+        - squirrel_object_perception_msgs
+        - squirrel_person_tracker_msgs
+        - squirrel_planning_knowledge_msgs
+        - squirrel_prediction_msgs
+        - squirrel_safety_msgs
+        - squirrel_speech_msgs
+        - squirrel_vad_msgs
+        - squirrel_view_controller_msgs
+        - squirrel_waypoint_msgs
+        tags:
+          release: release/indigo/{package}/{version}
+        url: git@github.com:squirrel-project/squirrel_common-release.git
+        version: 0.0.29-0
+      source:
+        type: git
+        url: git@github.com:squirrel-project/squirrel_common.git
+        version: indigo_dev
+      status: maintained
 type: distribution
 version: 1
