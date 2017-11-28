@@ -4,10 +4,10 @@
 ---
 jenkins_url: http://localhost:8010
 notifications:
-  committers: true
+  committers: false
   emails:
   - nhg@ipa.fhg.de
-  maintainers: true
+  maintainers: false
 targets:
   _config:
     apt_mirrors:
